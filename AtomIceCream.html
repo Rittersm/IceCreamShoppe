@@ -31,16 +31,23 @@
 			li:hover {
 				background-color: white;
 			}
+			.hr{
+				background-color: black; height: 2px; border: 0;
+			}
+			.ul{
+				border: 2px solid black;
+			}
 			body {
 				text-align:center; background-color: lightblue;
 			}
 		</style>
 	</head>
 	<body >
+		<!-- TODO: How to set image to resize for browser window? -->
 		<img src ="http://franchisemart.com/wp-content/uploads/2014/10/Ritters-Logo.jpg" width=1250, height=300/>
 		<h2><span style="text-decoration: underline;">Ritter's Ice Cream Shoppe</span></h2>
 		<p>Ritter's Ice Cream Shoppe specializes in the finest quality ice cream using only handmade, high quality ingredients. <br />Please stop in and visit one of our two locations, one in Fishers and one on the Circle, downtown, and grab a cone.<br /> We would be happy to see you.</p>
-		<hr />
+		<hr class="hr" />
 		<!-- TODO:Ask about images in html assignments -->
 		<img src ="http://images.all-free-download.com/images/graphiclarge/ice_cream_icon_clip_art_9436.jpg" width=200/>
 		<h4><span style="text-decoration: underline;">Flavors of the week:</span></h4>
@@ -50,7 +57,7 @@
 			<li class="even">German Raspberry Chocolate</li>
 			<li class="odd">Sea Salt Pistachio</li>
 		</ul>
-		<hr />
+		<hr class="hr" />
 		<h4><span style="text-decoration: underline;">Flavors:</span></h4>
 		<table style="margin: 0px auto; width: 500px;">
 		 <thead>
@@ -96,19 +103,21 @@
 			 </tr>
 		 </thead>
 		</table>
-		<hr />
+		<hr class="hr" />
 		<h4><span style="text-decoration: underline;">Our History</span></h4>
 			<p>In 1948, John Ritter of Chicago, Illinois, had an after-school job working at a local ice cream shop. One of the best perks of the job was getting to eat ice cream just out of the machine before it had been packed and frozen solid. The experience of tasting smooth, creamy, fresh-made ice cream made an indelible impression on young John.</p>
 			<p>Years went by, John joined the Navy and became an aerial photographer, and then started a career in film animation after leaving the service. John met and married Bonny, and together they built a life in Chicago where they raised six children. After 35 years in animation production, John decided to retire.</p>
 			<p>Upon hearing about John's impending retirement, one of his sons said to him: "Every time we stopped at an ice cream shoppe you said you'd like to own one someday. This is your chance."</p>
 			<p>The more the Ritters learned about ice cream, the more they leaned toward an ultra premium ice cream called "frozen custard," developed by the French over 100 years ago. After perfecting their own frozen custard recipe, John and Bonny opened the first Ritter's Frozen Custard shoppe in Franklin, Indiana, in 1989. Today, Ritter's Frozen Custard is headquartered in New York, with shoppes all across the Midwest. You can also find us in other parts of the country, including Florida, Texas and coming soon to New York.</p>
-		<hr />
-		<h5><span style="text-decoration: underline;">Our Hours:</span></h5>
-		<ul style="margin: 0px auto; width: 300px; background-color: white;">
+		<hr class="hr" />
+		<h5><span style="text-decoration: underline;">Store Hours:</span></h5>
+		<ul class="ul" style="margin: 0px auto; width: 300px; background-color: white;">
 			<li>Monday - Friday: 12 PM	to 11 PM</li>
 			<li>Saturday: 12 PM to 1 AM</li>
 			<li>Sunday: 1 PM to 9 PM</li>
 		</ul>
+		<h5>Contact Us:</h5>
+		<p>(317)555-1521</p>
 	<form method="get">
 		<input type="text" placeholder="Join our Mailing list" name="email" required />
 		<button type="submit">Send</button>
